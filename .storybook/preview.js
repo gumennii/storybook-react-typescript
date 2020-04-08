@@ -5,7 +5,8 @@ import { withInfo } from '@storybook/addon-info';
 
 addDecorator(
   withInfo({
-    inline: true,
+    // inline: true,
+    header: false,
     styles: {
       header: {
         h1: {

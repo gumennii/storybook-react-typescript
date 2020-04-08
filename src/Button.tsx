@@ -6,6 +6,8 @@ export interface Props {
    * @default primary
    */
   background?: string
+  /** Click handler */
+  onClick?: () => void
 }
 
 const Button: FC<Props> = ({ children, background, ...props }) => {
