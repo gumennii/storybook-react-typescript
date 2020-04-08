@@ -2,7 +2,30 @@ import { configure } from '@storybook/react'
 import { addDecorator } from '@storybook/react';
 
 import { withInfo } from '@storybook/addon-info';
-addDecorator(withInfo);
+
+addDecorator(
+  withInfo({
+    inline: true,
+    styles: {
+      header: {
+        h1: {
+          fontSize: '1rem'
+        },
+        body: {
+          paddingTop: 0,
+          paddingBottom: 0,
+        },
+        h2: {
+          fontSize: '0.875rem',
+          color: '#999',
+        },
+      },
+      infoBody: {
+        padding: '1rem'
+      },
+    },
+  })
+);
 
 const loaderFn = () => {
   const allExports = [
