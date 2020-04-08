@@ -1,6 +1,11 @@
 import React from 'react'
 import Button from './Button'
 
+export default {
+  component: Button,
+  title: 'Button'
+};
+
 export const text = () => <Button>Hello Button</Button>;
 
 export const emoji = () => (
@@ -10,8 +15,3 @@ export const emoji = () => (
     </span>
   </Button>
 );
-
-export default {
-  component: Button,
-  title: 'Button',
-};
